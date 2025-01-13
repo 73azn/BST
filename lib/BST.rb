@@ -115,7 +115,7 @@ class BST
         return root.data if root.data.equal?(data)
         queue.push(root.left) if !root.left.nil?
         queue.push(root.right) if !root.right.nil?
-        end
+      end
       
             
     end
@@ -133,9 +133,9 @@ class BST
         print "#{root.data} "
         queue.push(root.left) if !root.left.nil?
         queue.push(root.right) if !root.right.nil?
-        end
-      return nil     
       end
+      return nil     
+    end
             
     
     def delete(data,root=@root,init=true)
